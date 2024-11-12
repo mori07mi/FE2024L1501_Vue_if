@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
     <title>sample</title>
 </head>
 <body>
@@ -15,6 +16,10 @@
         @click="decrement">-1</button>
         <br>
         <p>{{ count }}</p>
+        <p
+        v-if="isPass"
+        class="passed"
+        >合格！</p>
         <div v-if="count >= 60">合格です！
         <section>
             <h2>おめでとうございます</h2>
